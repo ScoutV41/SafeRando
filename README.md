@@ -29,9 +29,6 @@ Clone this repository or download `Rando.py`, then install the mandatory Python 
 ```bash
 pip install requests geopy plyer
 ```
-Here is a complete, professional, and well-structured `README.md` file designed for your GitHub repository. It explains what your safer Randonautica clone does, highlights the safety filtering mechanisms, details the 3-tier location system, and instructs users on how to run it or compile it into an executable.
-
-Copy and paste the plain text below into a file named `README.md` in your project folder:
 
 ```markdown
 # SafeRando: A Safer Randonautica Clone
