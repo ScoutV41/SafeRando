@@ -2,7 +2,7 @@
 
 SafeRando is a lightweight, terminal-based application inspired by Randonautica that generates random geographical coordinates within a user-defined radius for exploration. Unlike traditional implementations, SafeRando prioritizes explorer safety and practicality by running candidate points through multi-stage OpenStreetMap (OSM) filters and validating real-world travel constraints before guiding you to a location.
 
-No "quantum" black magic—just clean Python math and public street data to help you safely discover hidden spots in your neighborhood.
+No "quantum" BS just clean Python math and public street data to help you safely discover hidden spots in your neighborhood.
 
 ---
 
@@ -30,7 +30,6 @@ Clone this repository or download `Rando.py`, then install the mandatory Python 
 pip install requests geopy plyer
 ```
 
-```markdown
 # SafeRando: A Safer Randonautica Clone
 
 SafeRando is a lightweight, terminal-based application inspired by Randonautica that generates random geographical coordinates within a user-defined radius for exploration. Unlike traditional implementations, SafeRando prioritizes explorer safety and practicality by running candidate points through multi-stage OpenStreetMap (OSM) filters and validating real-world travel constraints before guiding you to a location.
