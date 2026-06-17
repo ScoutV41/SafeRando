@@ -60,6 +60,6 @@ This script is built using core logic designed to cleanly shift to a web-based f
 
 * **Routing Data:** Powered by the open-source [Project OSRM](https://project-osrm.org/).
 * **Map Data:** Provided by [OpenStreetMap](https://www.google.com/search?q=https://www.openstreetmap.org/) contributors via Nominatim and Overpass APIs.
-* **Disclaimer:** This script is built for legal, safe recreational exploration. Always respect local trespassing laws, stay aware of your surroundings, and do not explore private properties or hazardous terrain. Use at your own risk.
+* **Disclaimer:** This script is built for legal, safe recreational exploration. Always respect local trespassing laws, stay aware of your surroundings, and do not explore private properties or hazardous terrain. Use at your own risk. I do not take responsibility for any injury or harm done to you and/or your party.
 
 
