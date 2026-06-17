@@ -37,7 +37,7 @@ OSRM_PROFILE_PATHS = {
     "walk": "walking",
 }
 OSRM_BASE_URL = "https://router.project-osrm.org/route/v1"
-HEADERS = {"User-Agent": "personal-randonaut-script/0.3 (aidenns316@gmail.com)"}
+HEADERS = {"User-Agent": "personal-randonaut-script/0.3 (Local testing)"}
 
 # Safety Tags
 DISALLOWED_LANDUSE = {
