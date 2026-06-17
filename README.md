@@ -6,7 +6,7 @@ No "quantum" BS just clean Python math and public street data to help you safely
 
 ---
 
-## 🚀 Features
+##  Features
 
 * **3-Tier Location Detection:** Automatically resolves your starting point with smart fallbacks:
     1.  **Hardware GPS:** Attempts to ping physical device hardware (via `plyer`).
@@ -30,7 +30,7 @@ Clone this repository or download `Rando.py`, then install the mandatory Python 
 pip install requests geopy plyer
 ```
 
-## 🎮 How to Use
+##  How to Use
 
 Simply execute the script from your terminal:
 
@@ -50,18 +50,16 @@ python Rando.py
 ---
 
 
-## 🗺️ Future Architecture Notice
+##  Future Architecture Notice
 
 This script is built using core logic designed to cleanly shift to a web-based front end. When porting this project to a web application (e.g., via Flask or FastAPI), Tier 1 and Tier 2 location detection will be replaced entirely on the front end by the native HTML5 Browser Geolocation API (`navigator.geolocation`) for pinpoint accuracy.
 
 ---
 
-## 📜 Credits and Disclaimer
+##  Credits and Disclaimer
 
 * **Routing Data:** Powered by the open-source [Project OSRM](https://project-osrm.org/).
 * **Map Data:** Provided by [OpenStreetMap](https://www.google.com/search?q=https://www.openstreetmap.org/) contributors via Nominatim and Overpass APIs.
 * **Disclaimer:** This script is built for legal, safe recreational exploration. Always respect local trespassing laws, stay aware of your surroundings, and do not explore private properties or hazardous terrain. Use at your own risk.
 
-```
 
-```
