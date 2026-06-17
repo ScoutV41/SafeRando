@@ -30,41 +30,6 @@ Clone this repository or download `Rando.py`, then install the mandatory Python 
 pip install requests geopy plyer
 ```
 
-# SafeRando: A Safer Randonautica Clone
-
-SafeRando is a lightweight, terminal-based application inspired by Randonautica that generates random geographical coordinates within a user-defined radius for exploration. Unlike traditional implementations, SafeRando prioritizes explorer safety and practicality by running candidate points through multi-stage OpenStreetMap (OSM) filters and validating real-world travel constraints before guiding you to a location.
-
-No "quantum" black magic—just clean Python math and public street data to help you safely discover hidden spots in your neighborhood.
-
----
-
-## 🚀 Features
-
-* **3-Tier Location Detection:** Automatically resolves your starting point with smart fallbacks:
-    1.  **Hardware GPS:** Attempts to ping physical device hardware (via `plyer`).
-    2.  **IP Geolocation:** If GPS fails or isn't supported, it tracks your approximate location via your public IP address.
-    3.  **Manual Entry:** Prompts manual entry if all network/device options fail.
-* **Stage 1 Safety Filtering (OSM + Nominatim):** Drops points that land directly inside private property, active construction zones, industrial sites, military installations, quarries, or farmlands.
-* **Sensitive Area Whitelist Protection:** Automatically blocks and rerolls any coordinate that lands near schools, daycares, universities, hospitals, clinics, police stations, or prisons.
-* **Stage 2 Route Distance Validation (OSRM):** Calculates the *actual* walking, biking, or driving route to your destination instead of a straight line. If a point is across a river or a barrier and requires an absurdly long detour, the script automatically catches it and re-rolls.
-
----
-
-## 🛠️ Installation & Setup
-
-### 1. Prerequisites
-Ensure you have Python 3.8 or higher installed on your computer.
-
-### 2. Install Required Libraries
-Clone this repository or download `Rando.py`, then install the mandatory Python dependencies via terminal/command prompt:
-
-```bash
-pip install requests geopy plyer
-
-```
-
----
-
 ## 🎮 How to Use
 
 Simply execute the script from your terminal:
