@@ -25,6 +25,7 @@ Ensure you have Python 3.8 or higher installed on your computer.
 
 ### 2. Install Required Libraries
 Clone this repository or download `Rando.py`, then install the mandatory Python dependencies via terminal/command prompt:
+(If you dont want to install manually the V2 script should automatically install them fore you)
 
 ```bash
 pip install requests geopy plyer colorama
