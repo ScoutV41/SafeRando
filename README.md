@@ -27,7 +27,7 @@ Ensure you have Python 3.8 or higher installed on your computer.
 Clone this repository or download `Rando.py`, then install the mandatory Python dependencies via terminal/command prompt:
 
 ```bash
-pip install requests geopy plyer
+pip install requests geopy plyer colorama
 ```
 
 ##  How to Use
