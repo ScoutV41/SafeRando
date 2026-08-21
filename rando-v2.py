@@ -1,6 +1,4 @@
 """
-Randonaut-style random point generator with OSM-based safety filtering,
-accurate ellipsoidal math, and real routing-distance validation.
 
 Features:
 - Dynamic Dependency Installer (subprocess + pip)
@@ -72,7 +70,6 @@ CONFIG_FILE   = "randonaut_config.json"
 LOG_FILE      = "randonaut_log.json"
 
 # Speed test uses a known-size file so the Mbps calculation is actually real.
-# Cloudflare's 1MB test file is reliable and fast to fetch.
 SPEED_TEST_URL       = "https://speed.cloudflare.com/__down?bytes=1000000"
 SPEED_TEST_BYTES     = 1_000_000  # 1 MB
 
