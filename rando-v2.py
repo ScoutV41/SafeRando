@@ -1,16 +1,4 @@
-"""
 
-Features:
-- Dynamic Dependency Installer (subprocess + pip)
-- Startup Connection & Status Check Utility (opt-in via --check flag)
-- Colored terminal output (colorama)
-- POI enrichment: shows interesting nearby features at the destination
-- Bearing + cardinal direction from origin to destination
-- Result logging to randonaut_log.json
-- Config file (randonaut_config.json) for saved preferences
-- Google Street View link in result
-- "Press Enter to exit" so the console stays open when run as .exe
-"""
 
 import subprocess
 import sys
@@ -22,7 +10,7 @@ import os
 import requests
 from datetime import datetime
 
-# ── 0. AUTO-INSTALL AND IMPORT DEPENDENCIES ───────────────────────────────
+# 0. AUTO-INSTALL AND IMPORT DEPENDENCIES ───────────────────────────────
 
 def install_and_import(package_name, import_name=None):
     """Checks if a package is installed; if not, installs it automatically."""
