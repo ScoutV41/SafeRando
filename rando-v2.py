@@ -95,9 +95,9 @@ def p_warn(msg): print(f"{C_WARN}  [!]{C_RESET} {msg}")
 def p_info(msg): print(f"{C_INFO}  [i]{C_RESET} {msg}")
 def p_head(msg): print(f"\n{C_BOLD}{msg}{C_RESET}")
 
-# ═══════════════════════════════════════════════════════════════════════════
-# PRE-FLIGHT STATUS CHECK  (run with --check flag, not on every launch)
-# ═══════════════════════════════════════════════════════════════════════════
+ 
+# PRE-FLIGHT STATUS CHECK  (run with --check flag, not on every launch) --------
+ 
 
 def run_preflight_check():
     p_head("=== Pre-flight Diagnostics ===")
@@ -171,9 +171,9 @@ def run_preflight_check():
 
     p_head("Diagnostics complete. Launching...\n")
 
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 # CONFIG FILE
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 
 def load_config():
     if os.path.exists(CONFIG_FILE):
@@ -198,9 +198,9 @@ def save_config(settings, origin_lat, origin_lon):
     except Exception as e:
         p_warn(f"Couldn't save config: {e}")
 
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 # RESULT LOGGING
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 
 def log_result(origin_lat, origin_lon, result, settings):
     entry = {
@@ -231,9 +231,9 @@ def log_result(origin_lat, origin_lon, result, settings):
     except Exception as e:
         p_warn(f"Couldn't write log: {e}")
 
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 # 3-TIER LOCATION DETECTION
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 
 _gps_location = None
 
@@ -312,9 +312,9 @@ def get_current_location(cfg):
     print("  Tier 3: Manual Entry")
     return get_manual_location()
 
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 # CORE RANDONAUT LOGIC
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 
 def random_point_in_radius(lat, lon, radius_m):
     r       = radius_m * math.sqrt(random.random())
@@ -469,9 +469,9 @@ def passes_travel_limit(route_info, search_radius_m, max_distance_m=None, max_du
         return False, f"{route_info['duration_s']/60:.1f}min exceeds {max_duration_s/60:.0f}min limit"
     return True, f"{route_info['distance_m']:.0f}m, {route_info['duration_s']/60:.1f}min"
 
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 # SEARCH ORCHESTRATION
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 
 def find_safety_passed_point(origin_lat, origin_lon, radius_m=800, max_attempts=15, delay=1.5):
     for attempt in range(1, max_attempts + 1):
@@ -546,9 +546,9 @@ def find_random_destination(origin_lat, origin_lon, settings, max_stage1_attempt
         time.sleep(delay)
     return None
 
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 # ENTRY POINT
-# ═══════════════════════════════════════════════════════════════════════════
+ 
 
 if __name__ == "__main__":
     # Run preflight diagnostics only when explicitly requested
